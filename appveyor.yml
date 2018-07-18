@@ -1,6 +1,8 @@
 init:
 - ps: iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
 install:
-- ps: scoop install shellcheck
+- scoop install curl grep sed less touch
+- scoop install python ruby go perl
+# ps: scoop install shellcheck
 test_script:
 - shellcheck -V
