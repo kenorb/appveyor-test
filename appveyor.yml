@@ -4,5 +4,6 @@ install:
 - ps: scoop install curl grep sed less touch
 - ps: scoop install python ruby go perl
 # ps: scoop install shellcheck
+build: off
 test_script:
 - shellcheck -V
